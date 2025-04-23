@@ -1,0 +1,32 @@
+Mode: single
+Input file: data/mt_bench/model_judgment/gpt-4.1-mini_single.jsonl
+
+########## First turn ##########
+                                                                                       score
+model                                                                          turn         
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-with-len-norm-v6    1     5.05000
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-v6                  1     4.91875
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-no-len-norm-v6 1     4.86250
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-v6             1     4.81875
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-v6                                 1     4.39375
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-with-len-norm-v6                   1     4.22500
+
+########## Second turn ##########
+                                                                                        score
+model                                                                          turn          
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-no-len-norm-v6 2     3.632911
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-with-len-norm-v6                   2     3.587500
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-v6             2     3.481250
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-with-len-norm-v6    2     3.387500
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-v6                  2     3.300000
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-v6                                 2     3.131250
+
+########## Average ##########
+                                                                                   score
+model                                                                                   
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-no-len-norm-v6  4.251572
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-with-len-norm-v6     4.218750
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-gamma-to-beta-1.4-v6              4.150000
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-reward_eps_0.6-v6                   4.109375
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-with-len-norm-v6                    3.906250
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-v6                                  3.762500

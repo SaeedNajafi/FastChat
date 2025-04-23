@@ -5,6 +5,7 @@ python3 show_result.py --mode [single|pairwise-baseline|pairwise-all]
 import argparse
 import pandas as pd
 
+pd.options.display.max_colwidth = 512
 
 def display_result_single(args):
     if args.input_file is None:

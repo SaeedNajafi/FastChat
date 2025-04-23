@@ -111,7 +111,9 @@ def get_model_answers(
                 conv.append_message(conv.roles[0], qs)
                 conv.append_message(conv.roles[1], None)
                 prompt = conv.get_prompt()
-                input_ids = tokenizer([prompt]).input_ids
+                input_encodings = tokenizer([prompt])
+                input_ids = input_encodings.input_ids
+                attention_mask = input_encodings.attention_mask
 
                 if temperature < 1e-4:
                     do_sample = False
@@ -121,7 +123,11 @@ def get_model_answers(
                 # some models may error out when generating long outputs
                 try:
                     output_ids = model.generate(
-                        torch.as_tensor(input_ids).cuda(),
+                        input_ids=torch.as_tensor(input_ids).cuda(),
+                        attention_mask=torch.as_tensor(attention_mask).cuda(),
+                        tokenizer=tokenizer,
+                        pad_token_id=tokenizer.pad_token_id,
+                        eos_token_id=tokenizer.eos_token_id,
                         do_sample=do_sample,
                         temperature=temperature,
                         max_new_tokens=max_new_token,

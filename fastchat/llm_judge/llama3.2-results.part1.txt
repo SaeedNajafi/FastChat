@@ -1,0 +1,10 @@
+Mode: pairwise-baseline
+Input file: data/mt_bench/model_judgment/gpt-4.1-mini_pair.jsonl
+                                                    win  ...  win_rate_adjusted
+model                                                    ...                   
+llama3.2-1b-offline-mmpo-beta-0.5-lr-0.0003-rew...   56  ...           0.553125
+llama3.2-1b-offline-simpo-beta-0.01-lr-0.0003-g...   49  ...           0.500000
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-v6       49  ...           0.475000
+llama3.2-1b-offline-dpo-beta-0.01-lr-0.0005-wit...   37  ...           0.421875
+
+[4 rows x 6 columns]
