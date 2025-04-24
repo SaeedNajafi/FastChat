@@ -131,6 +131,7 @@ def get_model_answers(
                         do_sample=do_sample,
                         temperature=temperature,
                         max_new_tokens=max_new_token,
+                        use_cache=True
                     )
                     if model.config.is_encoder_decoder:
                         output_ids = output_ids[0]
@@ -150,6 +151,7 @@ def get_model_answers(
                     output = tokenizer.decode(
                         output_ids,
                         spaces_between_special_tokens=False,
+                        skip_special_tokens=True
                     )
                     if conv.stop_str and isinstance(conv.stop_str, list):
                         stop_str_indices = sorted(
@@ -178,6 +180,15 @@ def get_model_answers(
                     print("ERROR question ID: ", question["question_id"])
                     output = "ERROR"
 
+                output = output.replace("system\n\nCutting Knowledge Date: December 2023\nToday Date: 14 Apr 2025\n\nassistant\n\n", "")
+                output = output.replace("assistant\n\n", "")
+                output = output.replace("user\n\n", " ")
+                output = output.replace('.user"', '."')
+                output = output.replace('?user"', '?"')
+                output = output.replace('!user"', '!"')
+                output = output.replace('.assistant"', '."')
+                output = output.replace('?assistant"', '?"')
+                output = output.replace('!assistant"', '!"')
                 conv.update_last_message(output)
                 turns.append(output)
 
