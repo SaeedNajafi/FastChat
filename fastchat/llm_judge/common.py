@@ -108,6 +108,7 @@ def load_model_answers(answer_dir: str):
 
     for filename in filenames:
         model_name = os.path.basename(filename)[:-6]
+        print(model_name)
         answer = {}
         with open(filename) as fin:
             for line in fin:
@@ -617,13 +618,13 @@ def resolve_pairwise_judgment_dict(
     """Return the correct pairwise judge."""
     if multi_turn:
         if question["category"] in NEED_REF_CATS:
-            return model_judgments_math[("gpt-4.1-mini", "pair-math-v1-multi-turn")]
-        return model_judgments_normal[("gpt-4.1-mini", "pair-v2-multi-turn")]
+            return model_judgments_math[("gpt-4o-mini-2024-07-18", "pair-math-v1-multi-turn")]
+        return model_judgments_normal[("gpt-4o-mini-2024-07-18", "pair-v2-multi-turn")]
 
     if question["category"] in NEED_REF_CATS:
-        return model_judgments_math[("gpt-4.1-mini", "pair-math-v1")]
+        return model_judgments_math[("gpt-4o-mini-2024-07-18", "pair-math-v1")]
     else:
-        return model_judgments_normal[("gpt-4.1-mini", "pair-v2")]
+        return model_judgments_normal[("gpt-4o-mini-2024-07-18", "pair-v2")]
 
 
 def resolve_single_judgment_dict(
@@ -632,13 +633,13 @@ def resolve_single_judgment_dict(
     """Return the correct single answer grading judge."""
     if multi_turn:
         if question["category"] in NEED_REF_CATS:
-            return model_judgments_math[("gpt-4.1-mini", "single-math-v1-multi-turn")]
-        return model_judgments_normal[("gpt-4.1-mini", "single-v1-multi-turn")]
+            return model_judgments_math[("gpt-4o-mini-2024-07-18", "single-math-v1-multi-turn")]
+        return model_judgments_normal[("gpt-4o-mini-2024-07-18", "single-v1-multi-turn")]
 
     if question["category"] in NEED_REF_CATS:
-        return model_judgments_math[("gpt-4.1-mini", "single-math-v1")]
+        return model_judgments_math[("gpt-4o-mini-2024-07-18", "single-math-v1")]
     else:
-        return model_judgments_normal[("gpt-4.1-mini", "single-v1")]
+        return model_judgments_normal[("gpt-4o-mini-2024-07-18", "single-v1")]
 
 
 def get_pairwise_judge_explanation(gamekey, judgment_dict):

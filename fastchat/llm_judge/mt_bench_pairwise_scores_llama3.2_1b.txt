@@ -1,0 +1,44 @@
+Mode: pairwise-baseline
+Input file: data/mt_bench/model_judgment/gpt-4o-mini-2024-07-18_pair.jsonl
+                                                                                                           win  loss  tie  win_rate  loss_rate  win_rate_adjusted
+model                                                                                                                                                            
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-1784    56    36   68  0.350000   0.225000           0.562500
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-2225      56    40   64  0.350000   0.250000           0.550000
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-446              66    52   42  0.412500   0.325000           0.543750
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-1784      48    34   78  0.300000   0.212500           0.543750
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-2225   45    32   83  0.281250   0.200000           0.540625
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-892     43    35   82  0.268750   0.218750           0.525000
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-2225    46    39   75  0.287500   0.243750           0.521875
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-1338    45    40   75  0.281250   0.250000           0.515625
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-1784     48    44   68  0.300000   0.275000           0.512500
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-1338      46    42   72  0.287500   0.262500           0.512500
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-2225     51    48   61  0.318750   0.300000           0.509375
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-1338     45    43   72  0.281250   0.268750           0.506250
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-446       39    39   82  0.243750   0.243750           0.500000
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-446     40    43   77  0.250000   0.268750           0.490625
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-1784   42    47   71  0.262500   0.293750           0.484375
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-446                                  56    61   43  0.350000   0.381250           0.484375
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-1338   37    43   80  0.231250   0.268750           0.481250
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-892       41    48   71  0.256250   0.300000           0.478125
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-892      36    44   80  0.225000   0.275000           0.475000
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-446      29    44   87  0.181250   0.275000           0.453125
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-892    31    46   83  0.193750   0.287500           0.453125
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-892              45    62   53  0.281250   0.387500           0.446875
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-446    28    50   82  0.175000   0.312500           0.431250
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-1338                                 47    75   38  0.293750   0.468750           0.412500
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-1338             33    92   35  0.206250   0.575000           0.315625
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-1784                                 30    95   35  0.187500   0.593750           0.296875
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-892                                  33    98   28  0.207547   0.616352           0.295597
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-2225                                 26   104   30  0.162500   0.650000           0.256250
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-1784             22   115   23  0.137500   0.718750           0.209375
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-2225             16   126   18  0.100000   0.787500           0.156250
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-892              3   128   29  0.018750   0.800000           0.109375
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-446                                  6   134   20  0.037500   0.837500           0.100000
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-1338             2   134   24  0.012500   0.837500           0.087500
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-2225             2   136   22  0.012500   0.850000           0.081250
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-1338                                 3   139   18  0.018750   0.868750           0.075000
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-446              3   139   18  0.018750   0.868750           0.075000
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-892                                  3   140   17  0.018750   0.875000           0.071875
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-1784             2   142   16  0.012500   0.887500           0.062500
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-2225                                 0   142   18  0.000000   0.887500           0.056250
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-1784                                 2   146   12  0.012500   0.912500           0.050000

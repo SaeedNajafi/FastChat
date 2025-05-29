@@ -16,7 +16,21 @@ from tqdm import tqdm
 from fastchat.llm_judge.common import load_questions, temperature_config
 from fastchat.model import load_model, get_conversation_template
 from fastchat.utils import str_to_torch_dtype
-
+from alignment import (
+    DataArguments,
+    DPOConfig,
+    H4ArgumentParser,
+    ModelArguments,
+    apply_chat_template,
+    decontaminate_humaneval,
+    get_checkpoint,
+    get_datasets,
+    get_kbit_device_map,
+    get_peft_config,
+    get_quantization_config,
+    get_tokenizer,
+    is_adapter_model,
+)
 
 def run_eval(
     model_path,
@@ -104,13 +118,15 @@ def get_model_answers(
         choices = []
         for i in range(num_choices):
             torch.manual_seed(i)
-            conv = get_conversation_template(model_id)
+            conv = {"messages": []}
             turns = []
             for j in range(len(question["turns"])):
                 qs = question["turns"][j]
-                conv.append_message(conv.roles[0], qs)
-                conv.append_message(conv.roles[1], None)
-                prompt = conv.get_prompt()
+                message = {"role": "user", "content": qs}
+                conv["messages"].append(message)
+                prompt = apply_chat_template(example=conv,
+                                             tokenizer=tokenizer,
+                                             task="generation")["text"]
                 input_encodings = tokenizer([prompt])
                 input_ids = input_encodings.input_ids
                 attention_mask = input_encodings.attention_mask
@@ -138,58 +154,25 @@ def get_model_answers(
                     else:
                         output_ids = output_ids[0][len(input_ids[0]) :]
 
-                    # be consistent with the template's stop_token_ids
-                    if conv.stop_token_ids:
-                        stop_token_ids_index = [
-                            i
-                            for i, id in enumerate(output_ids)
-                            if id in conv.stop_token_ids
-                        ]
-                        if len(stop_token_ids_index) > 0:
-                            output_ids = output_ids[: stop_token_ids_index[0]]
+                    # # be consistent with the template's stop_token_ids
+                    # stop_token_ids_index = [
+                    #         i
+                    #         for i, id in enumerate(output_ids)
+                    #         if id == tokenizer.eos_token_id
+                    # ]
+                    # if len(stop_token_ids_index) > 0:
+                    #     output_ids = output_ids[: stop_token_ids_index[0]]
 
                     output = tokenizer.decode(
                         output_ids,
-                        spaces_between_special_tokens=False,
                         skip_special_tokens=True
                     )
-                    if conv.stop_str and isinstance(conv.stop_str, list):
-                        stop_str_indices = sorted(
-                            [
-                                output.find(stop_str)
-                                for stop_str in conv.stop_str
-                                if output.find(stop_str) > 0
-                            ]
-                        )
-                        if len(stop_str_indices) > 0:
-                            output = output[: stop_str_indices[0]]
-                    elif conv.stop_str and output.find(conv.stop_str) > 0:
-                        output = output[: output.find(conv.stop_str)]
 
-                    for special_token in tokenizer.special_tokens_map.values():
-                        if isinstance(special_token, list):
-                            for special_tok in special_token:
-                                output = output.replace(special_tok, "")
-                        else:
-                            output = output.replace(special_token, "")
-                    output = output.strip()
-
-                    if conv.name == "xgen" and output.startswith("Assistant:"):
-                        output = output.replace("Assistant:", "", 1).strip()
                 except RuntimeError as e:
                     print("ERROR question ID: ", question["question_id"])
                     output = "ERROR"
 
-                output = output.replace("system\n\nCutting Knowledge Date: December 2023\nToday Date: 14 Apr 2025\n\nassistant\n\n", "")
-                output = output.replace("assistant\n\n", "")
-                output = output.replace("user\n\n", " ")
-                output = output.replace('.user"', '."')
-                output = output.replace('?user"', '?"')
-                output = output.replace('!user"', '!"')
-                output = output.replace('.assistant"', '."')
-                output = output.replace('?assistant"', '?"')
-                output = output.replace('!assistant"', '!"')
-                conv.update_last_message(output)
+                conv["messages"].append({"role": "assistant", "content": output})
                 turns.append(output)
 
             choices.append({"index": i, "turns": turns})

@@ -1,0 +1,88 @@
+Mode: pairwise-baseline
+Input file: data/arena_hard_bench/model_judgment/gpt-4o-mini-2024-07-18_pair.jsonl
+skipped one line: 33860
+skipped one line: 35383
+skipped one line: 40096
+skipped one line: 42835
+skipped one line: 46723
+skipped one line: 47863
+skipped one line: 49244
+skipped one line: 53121
+skipped one line: 53500
+skipped one line: 53688
+skipped one line: 55355
+skipped one line: 57606
+skipped one line: 59369
+skipped one line: 59439
+skipped one line: 60227
+skipped one line: 60699
+skipped one line: 61267
+skipped one line: 63474
+skipped one line: 63868
+skipped one line: 64122
+skipped one line: 65182
+skipped one line: 67150
+skipped one line: 67391
+skipped one line: 67836
+skipped one line: 68202
+skipped one line: 69392
+skipped one line: 72754
+skipped one line: 76088
+skipped one line: 79951
+skipped one line: 82761
+       question_id  ...        tstamp
+0              565  ...  1.748337e+09
+1              743  ...  1.748337e+09
+2              674  ...  1.748337e+09
+3              666  ...  1.748337e+09
+4              655  ...  1.748337e+09
+...            ...  ...           ...
+89920           79  ...  1.748393e+09
+89921          242  ...  1.748393e+09
+89922          747  ...  1.748393e+09
+89923           20  ...  1.748393e+09
+89924          569  ...  1.748393e+09
+
+[89925 rows x 12 columns]
+                                                                                                           win  loss  tie  win_rate  loss_rate  win_rate_adjusted
+model                                                                                                                                                            
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-446             328   170  249  0.439090   0.227577           0.605756
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-2225     249   148  342  0.336942   0.200271           0.568336
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-1338     247   149  348  0.331989   0.200269           0.565860
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-446                                 304   208  224  0.413043   0.282609           0.565217
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-1784     247   166  326  0.334235   0.224628           0.554804
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-1784    240   166  337  0.323015   0.223419           0.549798
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-2225    225   166  351  0.303235   0.223720           0.539757
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-2225   227   174  344  0.304698   0.233557           0.535570
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-1784   224   183  336  0.301480   0.246299           0.527591
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-1338   211   179  353  0.283984   0.240915           0.521534
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-892      199   168  376  0.267833   0.226110           0.520861
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-892    201   173  368  0.270889   0.233154           0.518868
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-1338    204   177  362  0.274563   0.238223           0.518170
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-446     193   174  380  0.258367   0.232932           0.512718
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-2225  201   183  357  0.271255   0.246964           0.512146
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-no-entropy_checkpoint-892     198   180  368  0.265416   0.241287           0.512064
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-1784  194   194  356  0.260753   0.260753           0.500000
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-no-entropy_checkpoint-446      161   165  420  0.215818   0.221180           0.497319
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-446   162   166  415  0.218035   0.223419           0.497308
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-1338  187   194  359  0.252703   0.262162           0.495270
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_yes-v9-with-entropy_checkpoint-892   181   195  366  0.243935   0.262803           0.490566
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-892             243   260  240  0.327052   0.349933           0.488560
+llama3.2-1b-offline-mmpo-beta_0.01-lr_0.0005-reward_eps_0.9-avg_logps_no-v9-with-entropy_checkpoint-446    173   195  375  0.232840   0.262450           0.485195
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-1338                                237   269  235  0.319838   0.363023           0.478408
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-1338            200   319  226  0.268456   0.428188           0.420134
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-1784                                170   360  212  0.229111   0.485175           0.371968
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-892                                 182   379  186  0.243641   0.507363           0.368139
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_no-v9_checkpoint-2225                                165   399  176  0.222973   0.539189           0.341892
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-1784            149   386  207  0.200809   0.520216           0.340296
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_no-v9_checkpoint-2225            128   425  176  0.175583   0.582990           0.296296
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-446                                 48   543  149  0.064865   0.733784           0.165541
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-446             36   548  162  0.048257   0.734584           0.156836
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-892                                  8   523  214  0.010738   0.702013           0.154362
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-1338            18   536  186  0.024324   0.724324           0.150000
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-892             28   561  152  0.037787   0.757085           0.140351
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-1338                                14   551  176  0.018893   0.743590           0.137652
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-1784            20   555  163  0.027100   0.752033           0.137534
+llama3.2-1b-offline-simpo-beta_0.01-lr_0.0005-gamma-to-beta_1.0-avg_logps_yes-v9_checkpoint-2225            29   577  131  0.039349   0.782904           0.128223
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-1784                                11   570  158  0.014885   0.771313           0.121786
+llama3.2-1b-offline-dpo-beta_0.01-lr_0.0005-avg_logps_yes-v9_checkpoint-2225                                14   579  145  0.018970   0.784553           0.117209

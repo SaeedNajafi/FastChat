@@ -4,6 +4,8 @@ python3 show_result.py --mode [single|pairwise-baseline|pairwise-all]
 """
 import argparse
 import pandas as pd
+import json
+import os
 
 pd.options.display.max_colwidth = 512
 
@@ -25,16 +27,66 @@ def display_result_single(args):
 
     print("\n########## First turn ##########")
     df_1 = df[df["turn"] == 1].groupby(["model", "turn"]).mean()
-    print(df_1.sort_values(by="score", ascending=False))
+    df_1_results = df_1.sort_values(by="score", ascending=False)
+    print(df_1_results.to_string())
+    df_1_results.to_csv(args.output_file+".df1.csv", header=True, index=False, sep=",")
 
     if args.bench_name == "mt_bench":
         print("\n########## Second turn ##########")
         df_2 = df[df["turn"] == 2].groupby(["model", "turn"]).mean()
-        print(df_2.sort_values(by="score", ascending=False))
+        df_2_results = df_2.sort_values(by="score", ascending=False)
+        print(df_2_results.to_string())
+        df_2_results.to_csv(args.output_file+".df2.csv", header=True, index=False, sep=",")
 
         print("\n########## Average ##########")
         df_3 = df[["model", "score"]].groupby(["model"]).mean()
-        print(df_3.sort_values(by="score", ascending=False))
+        df_3_results = df_3.sort_values(by="score", ascending=False)
+        print(df_3_results.to_string())
+        df_3_results.to_csv(args.output_file+".df3.csv", header=True, index=False, sep=",")
+
+
+def read_jsonl_file_line_by_line(file_path):
+    """
+    Reads a .jsonl file line by line, parsing each line as a JSON object.
+
+    Args:
+        file_path (str): The path to the .jsonl file.
+
+    Returns:
+        list: A list of dictionaries, where each dictionary represents a JSON object from a line.
+              Returns an empty list if the file does not exist or is empty.
+    """
+    parsed_data = []
+
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        print(f"Error: File '{file_path}' not found.")
+        return parsed_data
+
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line_num, line in enumerate(f, 1):
+                # Strip whitespace (like newline characters) from the end of the line
+                stripped_line = line.strip()
+                if not stripped_line:
+                    # Skip empty lines
+                    continue
+                try:
+                    # Parse the JSON object from the line
+                    json_object = json.loads(stripped_line)
+                    parsed_data.append(json_object)
+                except json.JSONDecodeError as e:
+                    #print(f"Warning: Could not decode JSON on line {line_num} in '{file_path}': {e}")
+                    #print(f"Problematic line content: '{stripped_line}'")
+                    print(f"skipped one line: {line_num}")
+
+    except IOError as e:
+        print(f"Error reading file '{file_path}': {e}")
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+    return parsed_data
 
 
 def display_result_pairwise(args):
@@ -46,7 +98,10 @@ def display_result_pairwise(args):
         input_file = args.input_file
 
     print(f"Input file: {input_file}")
-    df_all = pd.read_json(input_file, lines=True)
+    parsed_data = read_jsonl_file_line_by_line(input_file)
+    df_all = pd.DataFrame(parsed_data)
+    print(df_all)
+    # df_all = pd.read_json(input_file, lines=True)
     df_all = df_all[(df_all["g1_winner"] != "error") & (df_all["g2_winner"] != "error")]
 
     model_list = (
@@ -90,13 +145,14 @@ def display_result_pairwise(args):
     )
     # print(df.sort_values(by="win_rate", ascending=False))
     # print(df.sort_values(by="loss_rate", ascending=True))
-    print(df.sort_values(by="win_rate_adjusted", ascending=False))
+    print(df.sort_values(by="win_rate_adjusted", ascending=False).to_string())
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--bench-name", type=str, default="mt_bench")
     parser.add_argument("--input-file", type=str)
+    parser.add_argument("--output-file", type=str)
     parser.add_argument("--judge-model", type=str, default="gpt-4")
     parser.add_argument("--baseline-model", type=str, default="gpt-3.5-turbo")
     parser.add_argument(

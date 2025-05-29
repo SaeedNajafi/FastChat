@@ -1,0 +1,260 @@
+Mode: single
+Input file: data/mt_bench/model_judgment/gpt-4.1-mini_single.jsonl
+
+########## First turn ##########
+                                                                                                                                 score
+model                                                                                                                     turn        
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2870    1     4.1875
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2300  1     4.0250
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2300    1     4.0000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2300 1     3.9625
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1150    1     3.9625
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1725 1     3.9125
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1725  1     3.9125
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2870  1     3.9125
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2870 1     3.9000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1725    1     3.9000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2870   1     3.8625
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1150  1     3.8000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1150   1     3.7750
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1725   1     3.7625
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1150 1     3.6625
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2300   1     3.6500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-575    1     3.6000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-575     1     3.5625
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-575  1     3.5500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1150           1     3.4875
+360-sft                                                                                                                   1     3.4500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-575            1     3.4500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1725           1     3.4125
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-575   1     3.4000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1150   1     3.3750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2300   1     3.3625
+135-sft                                                                                                                   1     3.3000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2870 1     3.2875
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-575    1     3.2875
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1725   1     3.2875
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2300    1     3.2750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2870    1     3.2250
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1725    1     3.2125
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2296           1     3.2000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1150           1     3.2000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1725 1     3.2000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2870           1     3.1875
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2870   1     3.1625
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2300 1     3.1000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1150 1     3.0500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1150    1     3.0375
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2870  1     3.0125
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-575     1     3.0125
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-575  1     3.0125
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-575            1     3.0000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1725  1     2.9375
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1150  1     2.9250
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1725           1     2.9125
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2300  1     2.9125
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-575   1     2.9000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2300           1     2.7750
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2870           1     2.7000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-575           1     2.5750
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-575           1     2.3750
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-575                                1     2.1250
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1150                               1     1.8625
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2296          1     1.8000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1725          1     1.7500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1150          1     1.7250
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2870          1     1.7125
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1725                               1     1.6875
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1150          1     1.6000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1725                               1     1.5500
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2300                               1     1.5250
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2296                               1     1.4625
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1725          1     1.3750
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2870                               1     1.3625
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-575                                1     1.3625
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2870                               1     1.3375
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1150                               1     1.3250
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2300          1     1.3000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2870          1     1.2250
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-575                               1     1.1125
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1150                              1     1.0500
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-575                               1     1.0125
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1725                              1     1.0125
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2870                              1     1.0125
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2296                              1     1.0125
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2300                              1     1.0125
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1150                              1     1.0000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1725                              1     1.0000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2870                              1     1.0000
+
+########## Second turn ##########
+                                                                                                                                   score
+model                                                                                                                     turn          
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2300    2     3.125000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2870 2     3.062500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1725    2     3.062500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2300 2     3.000000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1150   2     3.000000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2870  2     2.962500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1150           2     2.937500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1725 2     2.912500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2870    2     2.912500
+360-sft                                                                                                                   2     2.900000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2300  2     2.900000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1725  2     2.875000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1150 2     2.825000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-575            2     2.812500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2870   2     2.775000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1150    2     2.775000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1725   2     2.775000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1725           2     2.762500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-575     2     2.762500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-575    2     2.750000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-575   2     2.700000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2300   2     2.687500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1150  2     2.612500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-575  2     2.525000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2296           2     2.500000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2300   2     2.437500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1725    2     2.412500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2870           2     2.400000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2300           2     2.400000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1150           2     2.387500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2300    2     2.362500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-575    2     2.362500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1725  2     2.337500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2870    2     2.337500
+135-sft                                                                                                                   2     2.312500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1150    2     2.300000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-575            2     2.287500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1725 2     2.275000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2300 2     2.275000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1150 2     2.262500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2870   2     2.250000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1725   2     2.225000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2870  2     2.212500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1150   2     2.187500
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1725           2     2.175000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2300  2     2.175000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-575     2     2.162500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-575   2     2.162500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2870 2     2.150000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1150  2     2.087500
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2870           2     2.062500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-575  2     2.050000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-575           2     1.850000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-575                                2     1.700000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-575           2     1.675000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1150                               2     1.512500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2296          2     1.450000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1150                              2     1.423077
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1725                               2     1.412500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1150          2     1.379747
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1725                               2     1.337500
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2300                               2     1.325000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-575                               2     1.307692
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2296                               2     1.250000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1725          2     1.240506
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2870                               2     1.225000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-575                                2     1.200000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1150                               2     1.187500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2870          2     1.187500
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1150          2     1.162500
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2870                               2     1.125000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2300          2     1.087500
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1725          2     1.075000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2870          2     1.062500
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-575                               2     1.037500
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1725                              2     1.012821
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2870                              2     1.012500
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1150                              2     1.000000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2870                              2     1.000000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2296                              2     1.000000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2300                              2     1.000000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1725                              2     1.000000
+
+########## Average ##########
+                                                                                                                              score
+model                                                                                                                              
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2300     3.562500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2870     3.550000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2870  3.481250
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1725     3.481250
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2300  3.481250
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2300   3.462500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2870   3.437500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1725  3.412500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1725   3.393750
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1150    3.387500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1150     3.368750
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2870    3.318750
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1725    3.268750
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1150  3.243750
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1150            3.212500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1150   3.206250
+360-sft                                                                                                                    3.175000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-575     3.175000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2300    3.168750
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-575      3.162500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-575             3.131250
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1725            3.087500
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-575    3.050000
+smollm2-360M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-575   3.037500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2300    2.900000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2296            2.850000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-575     2.825000
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2300     2.818750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1725     2.812500
+135-sft                                                                                                                    2.806250
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1150            2.793750
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2870            2.793750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-2870     2.781250
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1150    2.781250
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-1725    2.756250
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1725  2.737500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2870  2.718750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-no-entropy_checkpoint-2870    2.706250
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-2300  2.687500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-1150     2.668750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-1150  2.656250
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-575             2.643750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1725   2.637500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2870   2.612500
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-no-entropy_checkpoint-575      2.587500
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2300            2.587500
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-1725            2.543750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-2300   2.543750
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-575    2.531250
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_yes-v1-with-entropy_checkpoint-575   2.531250
+smollm2-135M-orca_bin_ultra-offline-mmpo-beta_0.01-lr_0.0001-reward_eps_0.5-avg_logps_no-v1-with-entropy_checkpoint-1150   2.506250
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_no-v1_checkpoint-2870            2.381250
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-575            2.212500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-575            2.025000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-575                                 1.912500
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1150                                1.687500
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2296           1.625000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1150           1.553459
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1725                                1.550000
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1725           1.496855
+smollm2-360M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2870           1.450000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1725                                1.443750
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2300                                1.425000
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1150           1.381250
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2296                                1.356250
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2870                                1.293750
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-575                                 1.281250
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-1150                                1.256250
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_no-v1_checkpoint-2870                                1.231250
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-1725           1.225000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1150                               1.208861
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-575                                1.208861
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2300           1.193750
+smollm2-135M-orca_bin_ultra-offline-simpo-beta_0.01-lr_0.0001-gamma-to-beta_1.2-avg_logps_yes-v1_checkpoint-2870           1.143750
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-575                                1.025000
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1150                               1.025000
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1725                               1.012658
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2296                               1.006289
+smollm2-360M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2870                               1.006250
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2300                               1.006250
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-2870                               1.006250
+smollm2-135M-orca_bin_ultra-offline-dpo-beta_0.01-lr_0.0007-avg_logps_yes-v1_checkpoint-1725                               1.000000
